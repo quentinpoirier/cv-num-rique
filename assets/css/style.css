@@ -1,0 +1,46 @@
+
+
+#navbar   {
+    overflow: hidden;
+    background-color: #686f82;
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+#navbar a:hover {
+    background-color: #5c8cdb;
+     color: white;
+ }
+  
+.content {
+    padding: 16px;
+  }
+  
+.header, #presentation, #abilities, #realisation, #studies, #jobs, #contact 
+{
+    text-align: center;
+}
+.name, .jobname, .title, .subtitle
+{
+    text-transform: uppercase;
+}
+hr{
+    color: #5c8cdb;
+}
+em{
+    color: #5c8cdb;
+    font-style: normal;
+}
+
+.name, .jobname{
+    position: relative;z-index:2
+}
+.icon{
+    width: 4rem;
+    height: auto;
+}

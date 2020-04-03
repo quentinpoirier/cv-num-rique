@@ -3,41 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>CV numérique</title>
 </head>
 <body>
     <div class="container">
+        
 
         <div class="header">
-            /* ajout d'une image */
             <div class="name"> quentin poirier</div>
             <div class="jobname">développeur web</div>
+            <img class="mainimg" src="assets/img/photo header.jpg">
+            <div id="navbar">
+                <a href="#presentation">présentation</a>
+                <a href="#abilities">compétences</a>
+                <a href="#realisation">projets</a>
+                <a href="#studies">formations</a>
+                <a href="#jobs">expériences</a>
+                <a href="#contact">contacts</a>
+            </div>
+
+            
         </div>
 
-        <div class="presentation">
-            <h1 class="title">présentation</h1>
-            <p class="content"> /* présentation en quelques lignes */ </p>
+        <div id="presentation">
+            <h1 class="title"><em>p</em>résentation</h1>
+            <p class="content">Pationné de nouvelles technulogies et après avoir travailler 2 ans en communication, 
+                j'ai décidé de m'orienter vers le développement web.<br>
+                Cette formation à La manu va me permettre d'acquérir un grand nombre de compétences,<br>
+                qui me permettront de m'épanouir professionnellement en exerçant un métier passionnant.<br>
+                D'un naturel curieux, je sais m'adapter à différentes situations<br> 
+                que se soit du travail en autonomie ou en groupe.<!-- présentation en quelques lignes --> </p>
         </div>
-
-        <div class="abilities">
-            <h1 class="title">compétences</h1>
+        <hr>
+        <div id="abilities">
+            <h1 class="title"><em>c</em>ompétences</h1>
             <h2 class="subtitle">languages</h2>
-            /* picto ou infographie des différent languages et leur niveau de maîtrise */
+            <img class="icon" src="assets/img/logoHtml.png">
+            <img class="icon" src="assets/img/logoCss.png">
+            <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
             <h2 class="subtitle">frameworks</h2>
-            /* picto ou infographie des différent languages et leur niveau de maîtrise */
-            <h2 class="subtitle">Infographie</h2>
-            /* picto ou infographie des différent languages et leur niveau de maîtrise */
+            <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
+            <h2 class="subtitle">Graphisme</h2>
+            <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
         </div>
-
-        <div class="realisation">
-            <h1 class="title">projets</h1>
-            /* lien vers les différents projets réalisés durant la formation */
+        <hr>
+        <div id="realisation">
+            <h1 class="title"><em>p</em>rojets</h1>
+            <!-- lien vers les différents projets réalisés durant la formation -->
         </div>
-
-        <div class="studies">
-            <h1 class="title">Formations</h1>
-            /* infographie sous forme de ligne reliant les différentes formations et/ou expériences pro */
+        <hr>
+        <div id="studies">
+            <h1 class="title"><em>f</em>ormations</h1>
+            <!-- infographie sous forme de ligne reliant les différentes formations et/ou expériences pro -->
             
             <p class="what">Développeur web</p>
             <p class="content">Titre profesionnel "Développeur.se web et web mobile" niveau III Bac+2 à La Manu - Le Havre (76)</p>
@@ -55,33 +73,49 @@
             <p class="content">Baccalauréat sciences économiques et sociales - option SES au lycée Raoul Vadepied - Evron (53)</p>
             <p class="when">2011</p>
         </div>
-
-        <div class="jobs">
-            <h1 class="title">Expériences</h1>
-            /* infographie sous forme de ligne reliant les différentes formations et/ou expériences pro */
+        <hr>
+        <div id="jobs">
+            <h1 class="title"><em>e</em>xpériences</h1>
+            <!-- infographie sous forme de ligne reliant les différentes formations et/ou expériences pro -->
             
             <p class="what">employé en communication et animation</p>
             <p class="where">aquacaux - Le Havre (76)</p>
             <p class="when">2018-2020</p>
-            <p class="content">communication: créations infographiques, réalisations audiovisuelles, web design, 
-                gestion réseaux sociaux, chef de projet, relations client</p>
-            <p class="content">animation: menée d'animation, gestion de groupe adultes et enfants, transmission de connaissances,
-                vente de produits dérivés, accueil clients, gestion de caisse</p>
+            <ul class="content">communication: 
+                <li>créations infographiques</li>
+                <li>réalisations audiovisuelles</li>
+                <li>web design</li>
+                <li>gestion réseaux sociaux, chef de projet</li>
+                <li>relations client</li>
+            </ul>
+            <ul class="content">animation: 
+                <li>menée d'animation</li>
+                <li>gestion de groupe adultes et enfants</li>
+                <li>transmission de connaissances</li>
+                <li>vente de produits dérivés</li>
+                <li>accueil clients, gestion de caisse</li>
+            </ul>
             
             <p class="what">agent de production</p>
             <p class="where">Socopa - Evron (53)</p>
             <p class="when">2012-2015</p>
-            <p class="content">conditionnement de produits alimentaire, Manutention et mise sur palette des produits, étiquetage des produits,
-                application stricte des mesures d'hygiène et de sécurité, travail en équipe, gestion d'une chaine de production, 
-                travail en autonomie sur plusieurs postes</p>
+            <ul class="content">
+                <li>conditionnement de produits alimentaire</li>
+                <li>Manutention et mise sur palette des produits</li>
+                <li>étiquetage des produits</li>
+                <li>application stricte des mesures d'hygiène et de sécurité</li>
+                <li>travail en équipe, gestion d'une chaine de production</li>
+                <li>travail en autonomie sur plusieurs postes</li>
+            </ul>
         </div>
-
-        <div class="contact">
-            <h1 class="title">contact</h1>
-            /* incorporation de liens menat à: email, linkedin, gitub */
-            /* ajout de picto/infographie pour rendre cette rubrique plus jolie */
+        <hr>
+        <div id="contact">
+            <h1 class="title"><em>c</em>ontact</h1>
+            <!-- incorporation de liens menat à: email, linkedin, gitub -->
+            <!-- ajout de picto/infographie pour rendre cette rubrique plus julie -->
         </div>
 
     </div>
+    
 </body>
 </html>
