@@ -1,25 +1,63 @@
-
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #234b7e;
+}
+.mainimg{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    position: relative;
+}
+.name{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+}
+.jobname{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+}
 
 #navbar   {
     overflow: hidden;
-    background-color: #686f82;
+    background-color: #234b7e;
+    position: absolute;
+    top: 97.1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: white;
 }
 #navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px;
+    padding: 10px;
     text-decoration: none;
 }
 #navbar a:hover {
-    background-color: #5c8cdb;
-     color: white;
+    background-color: white;
+     color: #234b7e;
  }
   
 .content {
     padding: 16px;
+    color: white;
   }
+.hood{
+    text-transform: uppercase;
+}
   
 .header, #presentation, #abilities, #realisation, #studies, #jobs, #contact 
 {
@@ -29,18 +67,180 @@
 {
     text-transform: uppercase;
 }
-hr{
-    color: #5c8cdb;
+.title{
+    text-align: center;
+    background-color: white;
+    color: #234b7e;
 }
-em{
-    color: #5c8cdb;
+.subtitle{
+    color: white;
+}
+.colorA{
+    color: #234b7e;
     font-style: normal;
 }
 
-.name, .jobname{
-    position: relative;z-index:2
-}
 .icon{
     width: 4rem;
     height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
+
+.timeline {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    background: #234b7e;
+    color: #234b7e;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+  }  /* INTRO SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  
+  /* TIMELINE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .timeline ul {
+    background: #234b7e;
+    padding: 50px 0;
+  }
+  
+  .timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: white;
+  }
+  
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+  }
+  
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: white;
+  }
+  
+  .timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .timeline ul li:nth-child(odd) div {
+    left: 45px;
+  }
+  
+  .timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    left: -470px;
+  }
+  
+  .timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .timeline ul li::after {
+    transition: background .5s ease-in-out;
+  }
+  
+  .timeline ul li.in-view::after {
+    background: white;
+  }
+  
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+  
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+  }
+  
+  .timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  @media screen and (max-width: 900px) {
+    .timeline ul li div {
+      width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+      left: -289px;
+      /*250+45-6*/
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline ul li {
+      margin-left: 20px;
+    }
+    .timeline ul li div {
+      width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(even) div {
+      left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent #234b7e transparent transparent;
+    }
+  }
