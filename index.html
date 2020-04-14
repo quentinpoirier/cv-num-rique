@@ -1,149 +1,333 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>CV numérique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>CV numérique</title>
 </head>
+
 <body>
-    <div id="container">
-        
+  <div class="container">
 
-        <div class="header">
-            <img class="mainimg" src="assets/img/photo header.jpg">
-            <div class="name"> quentin poirier</div>
-            <div class="jobname">développeur web</div>
-            <div id="navbar">
-                <a href="#presentation">présentation</a>
-                <a href="#abilities">compétences</a>
-                <a href="#realisation">projets</a>
-                <a href="#studies">formations</a>
-                <a href="#jobs">expériences</a>
-                <a href="#contact">contacts</a>
-            </div>
 
-            
-        </div>
+    <div class="row">
+      <!-- <img class="col-sm mainimg" src="assets/img/photo header.jpg"> -->
+      <img src="assets/img/photo header.jpg" class="img-fluid" alt="Responsive image">
+      <div class="col-sm h2 text-center">Quentin Poirier</div>
+      <div class="col-sm h1 text-center">développeur web</div>
 
-        <div id="presentation">
-            <h1 class="title"><span class="colorA">p</span>résentation</h1>
-            <p class="content">Pationné de nouvelles technologies et après avoir travaillé 2 ans en communication, 
-                j'ai décidé de m'orienter vers le développement web.<br>
-                Cette formation à La Manu va me permettre d'acquérir un grand nombre de compétences,<br>
-                qui me permettront de m'épanouir professionnellement en exerçant un métier passionnant.<br>
-                D'un naturel curieux, je sais m'adapter à différentes situations<br> 
-                que se soit du travail en autonomie ou en groupe.<!-- présentation en quelques lignes --> </p>
-        </div>
-        
-        <div id="abilities">
-            <h1 class="title"><span class="colorA">c</span>ompétences</h1>
-            <h2 class="subtitle">languages</h2>
-            <img class="icon" src="assets/img/logoHtml.png">
-            <img class="icon" src="assets/img/logoCss.png">
-            <img class="icon" src="assets/img/logoJS.png">
-            <img class="icon" src="assets/img/logophp2-compressor.png">
-            <img class="icon" src="assets/img/logoMySql.png">
-            <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
-            <h2 class="subtitle">frameworks</h2>
-            <img class="icon" src="assets/img/boot.png">
-            <img class="icon" src="assets/img/jQuery.png">
-            <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
-            <h2 class="subtitle">Graphisme</h2>
-            <img class="icon" src="assets/img/logoPS.webp">
-            <img class="icon" src="assets/img/logoID.png">
-            <img class="icon" src="assets/img/logoFCP.png">
-            <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
-        </div>
-        
-        <div id="realisation">
-            <h1 class="title"><span class="colorA">p</span>rojets</h1>
-            <!-- lien vers les différents projets réalisés durant la formation -->
-        </div>
-        
-        <h1 class="title"><span class="colorA">f</span>ormations</h1>
-        <section class="timeline">
-            <ul>
-              <li>
-                <div>
-                  <time>Developpeur Web (2020)</time> Titre profesionnel "Développeur.se web et web mobile" niveau III Bac+2 à La Manu - Le Havre (76)
-              </li>
-              <li>
-                <div>
-                  <time>DUT GEA (2015-2017)</time> Gestion des entreprises et des administrations - option management à L'IUT Caucriauville (76)
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>Licence d'histoire (2011-2013)</time> Première année de licence d'histoire à l'université de Nantes (44)
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>Baccalauréat ES (2011)</time> Baccalauréat sciences économiques et sociales - option SES au lycée Raoul Vadepied - Evron (53)
-                </div>
-              </li>
-              </ul>
-            </section>
-            <h1 class="title"><span class="colorA">e</span>xpérience</h1>
-            <section class="timeline">
-              <ul>
-                <li>
-                <div>
-                  <time>Employé en communication et animation (2018-2020)</time> <span class="hood">communication :</span><br>Créations infographiques audiovisuelles<br>Web design et gestion réseau sociaux<br>Getion de projet et relations clients<br><br><span class="hood">animation :</span><br>Menée d'animation<br>Transmission de connaissance<br>Accueil de clients adultes et enfants<br>Vente de produits et gestion de caisse
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>Agent de production (2012-2015)</time> Conditionnement de produitss alimentaires<br>Etiquettage et manutention des produits<br>Gesstion d'une chaîne de production<br>Adaptabilité à différents postes<br>Travail en autonomie et en équipe
-                </div>
-              </li>
-            </ul>
-          </section>
-        
-        <div id="contact">
-            <h1 class="title"><span class="colorA">c</span>ontact</h1>
-            <!-- incorporation de liens menat à: email, linkedin, gitub -->
-            <!-- ajout de picto/infographie pour rendre cette rubrique plus julie -->
-        </div>
 
     </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #234b7e;">
+      <a class="navbar-brand" href="#">Accueil</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <script>
-        (function() {
-  
-          'use strict';
-        
-          // define variables
-          var items = document.querySelectorAll(".timeline li");
-        
-          // check if an element is in viewport
-          // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-          function isElementInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-              rect.top >= 0 &&
-              rect.left >= 0 &&
-              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-          }
-        
-          function callbackFunc() {
-            for (var i = 0; i < items.length; i++) {
-              if (isElementInViewport(items[i])) {
-                items[i].classList.add("in-view");
-              }
-            }
-          }
-        
-          // listen for events
-          window.addEventListener("load", callbackFunc);
-          window.addEventListener("resize", callbackFunc);
-          window.addEventListener("scroll", callbackFunc);
-        
-      })();
-      </script>s
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#presentation">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#abilities">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#realisation">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#studies">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#jobs">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="row" id="presentation">
+      <p class="col text-center text-uppercase h1 txt">Présentation</p>
+      <div class="row">
+        <p class="col-sm-auto text-center txt">Pationné de nouvelles technologies et après avoir travaillé 2 ans en
+          communication,
+          j'ai décidé de m'orienter vers le développement web.
+          Cette formation à La Manu va me permettre d'acquérir un grand nombre de compétences,
+          qui me permettront de m'épanouir professionnellement en exerçant un métier passionnant.
+          D'un naturel curieux, je sais m'adapter à différentes situations
+          que se soit du travail en autonomie ou en groupe.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" id="abilities"></div>
+    <p class="col text-center text-uppercase h1 txt">Compétences</p>
+    <p class="col text-center text-uppercase h3 txt">languages</p>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logoHtml.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100">50%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logoCss.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">25%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logoJS.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0"
+            aria-valuemax="100">5%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logophp2-compressor.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0"
+            aria-valuemax="100">5%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logoMySql.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0"
+            aria-valuemax="100">5%
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
+    <p class="col text-center text-uppercase h3 txt">Frameworks</p>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/boot.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">25%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/jQuery.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0"
+            aria-valuemax="100">5%
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
+    <p class="col text-center text-uppercase h3 txt">Graphisme</p>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logoPS.webp">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+            aria-valuemax="100">75%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logoID.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100">50%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex bd-highlight shadow-sm p-1 mb-1 bg-white rounded">
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <img class="icon" src="assets/img/logoFCP.png">
+      </div>
+      <div class="p-4 w-100 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar progbar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100">50%
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- picto ou infographie des différent languages et leur niveau de maîtrise -->
+
+  <p class="col text-center text-uppercase h1 txt" id="realisation">Projets</p>
+  <!-- lien vers les différents projets réalisés durant la formation -->
+
+
+  <p class="col text-center text-uppercase h1 txt" id="studies">Formations</p>
+  <section class="timeline">
+    <ul>
+      <li>
+        <div>
+          <time>Developpeur Web (2020)</time> Titre profesionnel "Développeur.se web et web mobile" niveau III
+          Bac+2
+          à La Manu - Le Havre (76)
+      </li>
+      <li>
+        <div>
+          <time>DUT GEA (2015-2017)</time> Gestion des entreprises et des administrations - option management
+          à
+          L'IUT Caucriauville (76)
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>Licence d'histoire (2011-2013)</time> Première année de licence d'histoire à l'université de
+          Nantes
+          (44)
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>Baccalauréat ES (2011)</time> Baccalauréat sciences économiques et sociales - option SES au
+          lycée
+          Raoul Vadepied - Evron (53)
+        </div>
+      </li>
+    </ul>
+  </section>
+  </div>
+
+    <p class="col text-center text-uppercase h1 txt" id="jobs">Expériences</p>
     
+    <section class="timeline">
+      <ul>
+        <li>
+          <div>
+            <time>Employé en communication et animation (2018-2020)</time> <span class="hood">communication
+              :</span><br>Créations infographiques audiovisuelles<br>Web design et gestion réseau
+            sociaux<br>Getion
+            de
+            projet et relations clients<br><br><span class="hood">animation :</span><br>Menée
+            d'animation<br>Transmission de connaissance<br>Accueil de clients adultes et enfants<br>Vente de
+            produits
+            et gestion de caisse
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>Agent de production (2012-2015)</time> Conditionnement de produitss
+            alimentaires<br>Etiquettage
+            et
+            manutention des produits<br>Gesstion d'une chaîne de production<br>Adaptabilité à différents
+            postes<br>Travail en autonomie et en équipe
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  
+    <p class="col text-center text-uppercase h1 txt" id="contact">Contact</p>
+    <!-- incorporation de liens menat à: email, linkedin, gitub -->
+    <!-- ajout de picto/infographie pour rendre cette rubrique plus julie -->
+
+  </div>
+</div>
+
+  <script>
+    (function () {
+
+      'use strict';
+
+      // define variables
+      var items = document.querySelectorAll(".timeline li");
+
+      // check if an element is in viewport
+      // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+
+      // listen for events
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+
+    })();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
